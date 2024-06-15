@@ -16,4 +16,4 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Build and run Docker Compose
-        run: docker-compose run -f core/docker-compose.yml --rm web
+        run: docker-compose -f core/docker-compose.yml run --rm web
